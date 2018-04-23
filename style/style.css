@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family : 'wunderland';
+    src: url('/assets/fonts/Im Wunderland Spaced Out.otf');
+}
+@font-face{
+    font-family : 'goudy';
+    src: url('/assets/fonts/GOUDYSTO.TTF');
+}
+@font-face{
+    font-family : 'liberation';
+    src: url('/assets/fonts/LiberationMono-Regular.ttf');
+}
+
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Gugi', cursive;
+}
+
+#header{
+    background-color: #263238;
+}
+
+#blockHead1{
+    background-color: #009688;
+    padding-top: 10%;
+    height: 100%;
+    width: 380px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    list-style: none;
+    background-color: #009688;
+}
+
+#blockHead1>ul{
+    margin-top:25%; 
+}
+
+.nav-link{
+    color: #d4e8e5;
+    font-family: 'wunderland'; 
+    font-size: 200%;
+    text-align: end;
+}
+
+.nav-link:hover{
+    color: #d4e8e5;
+}
+.nav-item:hover{
+    background-color: #80cbc4;
+}
+
+
+#blockHead2>h1{
+    margin-top: 50%;
+    margin-left: 60%;
+    color: #d4e8e5;
+    font-family: 'goudy';
+    font-size: 250%;
+}
+
+#blockHead2>h3{
+    margin-top: 30%;
+    margin-left: 60%;
+    color: #d4e8e5;
+    font-family: 'wunderland';
+    font-size: 300%;
+}
+
+#blockHead3>img{
+    opacity: 0.25;
+    height: 100%;
+    width: 100%;
+}
+
+#apropos{
+    background-color: #00695c;
+}
+
+#blockApropos1>img{
+    opacity: 0.25;
+    height: 100%;
+    width: 65%;
+}
+
+#textBlock{ 
+    color: #d4e8e5;
+    margin-left: 30%;
+    margin-right: 10%;
+    margin-top: 22%;
+}
+#textBlock>h1{
+    font-family: 'wunderland';
+    font-size: 300%;
+}
+
+#textBlock>p{
+    font-family: 'liberation';
+    font-size: 100%;
+}
