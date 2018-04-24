@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+html {
+  font-size: 1rem;
 }
 
 @font-face{
@@ -15,18 +15,23 @@
     src: url('/assets/fonts/LiberationMono-Regular.ttf');
 }
 
-/* body{
-    margin-left: 10%;
-} */
+ body{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+} 
 
 #header{
     background-color: #263238;
+    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .sidenav {
     height: 100%;
-    width: 20%;
+    width: 15%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -36,7 +41,11 @@
     padding-top: 20px;
 }
 #menu{
-    margin-top: 60%;
+    /* margin-top: 5%; */
+}
+
+#logo{
+    /* margin-bottom: 40%; */
 }
 
 .sidenav a {
@@ -51,23 +60,24 @@
 .sidenav a:hover {
     color: #d4e8e5;
     background-color: #80cbc4;
+    border-right: 2px solid #263238;
 }
 
 
 #blockHead2>h1{
-    margin-top: 50%;
-    margin-left: 60%;
+    margin-top: 40%;
+    margin-left: 40%;
     color: #d4e8e5;
     font-family: 'goudy';
-    font-size: 250%;
+    font-size: 4em;
 }
 
 #blockHead2>h3{
-    margin-top: 30%;
-    margin-left: 60%;
+    margin-top: 20%;
+    margin-left: 40%;
     color: #d4e8e5;
     font-family: 'wunderland';
-    font-size: 300%;
+    font-size: 4.5em;
 }
 
 #blockHead3>img{
@@ -78,13 +88,15 @@
 
 #apropos{
     background-color: #00695c;
+    height: 100%;
+    width: 100%;
 }
 
 #blockApropos1>img{
     opacity: 0.15;
     height: 100%;
     width: 65%;
-    margin-left: 25%;
+    margin-left: 19%;
 }
 
 #textBlock{ 
@@ -95,64 +107,102 @@
 }
 #textBlock>h1{
     font-family: 'wunderland';
-    font-size: 300%;
+    font-size: 4em;
 }
 
 #textBlock>p{
     font-family: 'liberation';
-    font-size: 100%;
+    font-size: 1.3em;
+}
+
+#technos{
+    background-color: #263238;
+    height: 100%;
+    width: 100%;
+}
+
+#blockTechno2>img{
+    opacity: 0.40;
+    margin-right: 100%;
+    height: 810px;
+    width: 810px;
 }
 
 
-@media screen and (max-width: 992px)
-{
-.sidenav{
+
+
+  @media screen and (max-width: 992px){
+
+html {
+  font-size: 1.45rem * width/100 ;
+}
+
+#header, #apropos {
+    height: 100%;
+    width: 100%;
+}
+
+.sidenav, #blockHead3>img{
         visibility: hidden;
     }
 
 #blockHead2>h1{
-    font-size: 125%;
+    /* font-size: 4.5em; */
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 25%;
 }
 
 #blockHead2>h3{
-    font-size: 150%;
+    text-align: left;
+    /* font-size: 4.5em; */
+    margin-top: 23%;
+    margin-left: 20%;
 }
 #blockApropos1>img{
 margin-left: 0;
 }
 
-#textBlock>h1{
-    font-size: 150%;
+#textBlock{
+    /* font-size: 4em; */
+    margin-right: 10%;
+    margin-left: 15%;    
 }
 
 #textBlock>p{
-    font-size: 75%;
+    /* font-size: 1.2em; */
 }
 
 @media screen and (max-width:768px){
+html {
+  font-size: 1.2rem * width/100 ;
+}
+.sidenav, #blockHead3>img{
+    visibility: hidden;
+}
 
-#apropos, #header{
+#header, #apropos {
     height: 100%;
     width: 100%;
 }
 #blockHead2>h1{
-    font-size: 100%;
+    /* font-size: 4.5em; */
 }
 
 #blockHead2>h3{
-    font-size: 125%;
+    /* font-size: 4.5em; */
 }
     
 #textBlock>h1{
-    font-size: 100%;
+    /* font-size: 100%; */
 }
 
 #textBlock>p{
-    font-size: 25%;
+    /* font-size: 25%; */
 }
 
 #blockApropos1>img{
 margin-left: 0%;
 }
 }
-}
+} 
