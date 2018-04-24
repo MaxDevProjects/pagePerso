@@ -103,6 +103,11 @@
     visibility: hidden;
 }
 
+#header{
+    height: 98vh;
+    width: 100%;
+}
+
 #smallLogo{
     margin: 0;
     padding: 0;
@@ -134,7 +139,7 @@
 }
 
 #titre>div>h1{
-    margin-top: 30vw;
+    margin-top: 15vw;
     font-size: 8vw;
 }
 
@@ -188,12 +193,12 @@
 }
 
 #titre>div>h1{
-    margin-top: 30%;
-    font-size: 8vw;
+    margin-top: 40vw;
+    font-size: 9vw;
 }
 
 #titre>div>h3{
-    font-size: 8vw;
+    font-size: 7vw;
 }
 
 }
