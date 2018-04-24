@@ -15,46 +15,41 @@
     src: url('/assets/fonts/LiberationMono-Regular.ttf');
 }
 
-body{
-    
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Tajawal', sans-serif;
-    font-family: 'Black Han Sans', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Gugi', cursive;
-}
+/* body{
+    margin-left: 10%;
+} */
 
 #header{
     background-color: #263238;
+    width: 100%;
 }
 
-#blockHead1{
-    background-color: #009688;
-    padding-top: 10%;
+.sidenav {
     height: 100%;
-    width: 380px;
+    width: 20%;
+    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    list-style: none;
     background-color: #009688;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+#menu{
+    margin-top: 60%;
 }
 
-#blockHead1>ul{
-    margin-top:25%; 
-}
-
-.nav-link{
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: 'wunderland';
+    font-size: 37px;
     color: #d4e8e5;
-    font-family: 'wunderland'; 
-    font-size: 200%;
-    text-align: end;
+    display: block;
 }
 
-.nav-link:hover{
+.sidenav a:hover {
     color: #d4e8e5;
-}
-.nav-item:hover{
     background-color: #80cbc4;
 }
 
@@ -76,7 +71,7 @@ body{
 }
 
 #blockHead3>img{
-    opacity: 0.25;
+    opacity: 0.15;
     height: 100%;
     width: 100%;
 }
@@ -86,9 +81,10 @@ body{
 }
 
 #blockApropos1>img{
-    opacity: 0.25;
+    opacity: 0.15;
     height: 100%;
     width: 65%;
+    margin-left: 25%;
 }
 
 #textBlock{ 
@@ -105,4 +101,53 @@ body{
 #textBlock>p{
     font-family: 'liberation';
     font-size: 100%;
+}
+
+
+@media screen and (max-width: 992px)
+{
+.sidenav{
+        visibility: hidden;
+    }
+
+#blockHead2>h1{
+    font-size: 125%;
+}
+
+#blockHead2>h3{
+    font-size: 150%;
+}
+#blockApropos1>img{
+margin-left: 0;
+}
+
+#textBlock>h1{
+    font-size: 150%;
+}
+
+#textBlock>p{
+    font-size: 75%;
+}
+
+@media screen and (max-width:768px){
+#blockHead2>h1{
+    font-size: 100%;
+}
+
+#blockHead2>h3{
+    font-size: 125%;
+}
+    
+#textBlock>h1{
+    font-size: 100%;
+}
+
+#textBlock>p{
+    font-size: 25%;
+}
+
+#blockApropos1>img{
+margin-left: 0%;
+}
+}
 }

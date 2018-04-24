@@ -1,0 +1,19 @@
+ <div id="blockHead1" class="position-fixed col-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#header">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#apropos">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#technos">Technos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projets">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                </ul>
+            </div>
