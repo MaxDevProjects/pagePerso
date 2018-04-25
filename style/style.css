@@ -11,6 +11,10 @@
     src: url('/assets/fonts/LiberationMono-Regular.ttf');
 }
 
+@viewport{
+    orientation: portrait;
+}
+
 *{
     margin: 0;
 }
