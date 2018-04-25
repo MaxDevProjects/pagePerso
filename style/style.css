@@ -332,6 +332,10 @@ body{
     margin-bottom: 30vh;
 }
 
+.carousel-control-prev{
+    margin: auto;
+}
+
 }
 
 /*----------------mediumscreenDisplay------------------*/
