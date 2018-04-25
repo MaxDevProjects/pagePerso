@@ -11,10 +11,6 @@
     src: url('/assets/fonts/LiberationMono-Regular.ttf');
 }
 
-@viewport{
-    orientation: portrait;
-}
-
 *{
     margin: 0;
 }
@@ -213,9 +209,13 @@
 }
 
 /*----------------mediumscreenDisplay------------------*/
-
 @media screen and (max-width:768px){
+    
+@viewport{
+    orientation: landscape;
+}
 
+  
 .navbar img{
     width: 48px;
 }
