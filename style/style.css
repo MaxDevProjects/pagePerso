@@ -16,7 +16,6 @@
 }
 
  body{
-    box-sizing: border-box;
     margin: 0;
     left: 0;
     width: 100vw;
@@ -62,7 +61,7 @@
     flex: none;
     background-color: #263238;
     height: 810px;
-    width: 100%;
+    width: 100vw;
 }
 
 #header>#titre>div{
@@ -74,7 +73,7 @@
     position: relative;
     font-family: 'goudy';
     color: #d4e8e5;
-    margin-top: 60%;
+    margin-top: 40vh;
     font-size: 4em;
     margin-left: 2vw;
 }
@@ -83,7 +82,7 @@
     position: relative;
     font-family: 'wunderland';
     color: #d4e8e5;
-    margin-top: 200px;
+    margin-top: 20vh;
     font-size: 3em;
     margin-left: 4vw;
 }
@@ -91,21 +90,21 @@
 #header-bg{
     position: static;
     opacity: 0.2;
-    height: 100%;
+    height: 810px;
     transform-origin: right;
-    right: 0px;
+    right: -2.5vw;
 }
 
 #apropos{
     display: flex;
     background-color: #00695c;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 #apropos>#titre-apropos>h1{
     font-family: 'wunderland';
-    margin-left: 50%
+    margin-left: 50vw;
 }
 
 #text-apropos{
@@ -143,6 +142,13 @@
     width: 70vw; 
     height: 98vh;
 }
+
+#bg-technos{
+    background-color: #263238;
+    width: 100vw;
+    height: 100vh;
+}
+
 #technos>div{
     margin-top: 2vh;
 }
@@ -158,21 +164,19 @@
     background-color: #009688;
 }
 
-#bg-technos{
-    background-color: #263238;
-}
 
 #bg-pc{
     position: absolute;
     opacity: 0.3;
-    height: 98vh;
-    right: 0;
-
+    height: 100vh;
+    right: -2vw;
+    margin-top: 8px;
 }
 
 #projets{
     background-color: #00695c;
     height: 100vh;
+    width: 100vw;
 }
 
 
@@ -235,10 +239,65 @@
     width: 100vw;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+     margin-top: 2.5vh;
+     margin-left: 38vw;
+     margin-bottom: 10vh;
+     height: 80vh;
+}
+
 .form-group label{
     color: #d4e8e5;
     font-family: 'liberation';
     font-size: 2vw;
+}
+
+.form-control{
+    width: 40vw;
+}
+
+#textarea{
+    width: 40vw;
+    height: 20vw;
+}
+
+input{
+    font-family: "liberation";
+}
+
+.btn{
+    background-color: #009688;
+    font-family: 'liberation';
+    color : #d4e8e5;
+}
+.btn:hover{
+    background-color: #00695c;
+    color : #263238;
+}
+
+#footer{
+    width: 100vw;
+    height: 10vh;
+    font-family: 'liberation';
+    font-size: 0.8vw;
+    color: #d4e8e5;
+    background-color: #263238;
+}
+
+#links{
+    display: flex;
+    width: 10vw; 
+    margin-left: 52vw;
+}
+
+#links>a{
+    margin-left: 1vw;
+}
+
+.footer-copyright{
+    margin-left: 15vw;
 }
 /*----------------tabletScreenDisplay------------------*/
 @media screen and (max-width: 992px){
@@ -258,8 +317,8 @@ body{
 }
 
 #header{
-    height: 98vh;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 #smallLogo{
@@ -272,6 +331,7 @@ body{
     margin: 0;
     background-color: #009688;
     position: relative;
+    width: 100vw;
 }
 .navbar img{
     width: 64px;
@@ -290,6 +350,7 @@ body{
 
 #header>#titre>div{
     margin-left: 15vw;
+    margin-top: 5vh;
 }
 
 #titre>div>h1{
@@ -299,6 +360,7 @@ body{
 
 #titre>div>h3{
     font-size: 7vw;
+    margin-top: 5vw;
 }
 
 #text-apropos{
@@ -357,10 +419,51 @@ body{
 }
 
 .form{
-    margin: auto;
-    width: 60vw;
-    height: 90vw;
+    margin: 10vh auto auto auto;
+    height: 80vh;
 }
+
+.form-group label, .btn{
+    font-size: 2vw;
+}
+
+.form-control{
+    width: 60vw;
+}
+
+#textarea{
+    width: 60vw;
+    height: 20vw;
+}
+
+input{
+    font-size: 2vw;
+}
+
+#footer{
+    width: 100vw;
+    height: 10vh;
+    font-family: 'liberation';
+    font-size: 0.8vw;
+    color: #d4e8e5;
+    background-color: #263238;
+}
+
+#links{
+    display: flex;
+    width: 15vw; 
+    margin: auto;
+}
+
+#links>a{
+    margin-left: 1vw;
+}
+
+
+.footer-copyright{
+    margin: auto;
+}
+
 }
 
 /*----------------mediumscreenDisplay------------------*/
@@ -431,6 +534,9 @@ body{
     margin-bottom: 20vh;
 }
 
+.form-group label, .btn{
+    font-size: 3vw;
+}
 
 }
 
@@ -481,6 +587,15 @@ body{
 }
 .carousel-caption{
     margin-bottom: 25vh;
+}
+
+#textarea{
+    width: 60vw;
+    height: 15vw;
+}
+
+.form-group label, .btn{
+    font-size: 4vw;
 }
 
 }
