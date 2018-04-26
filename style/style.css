@@ -317,6 +317,20 @@ input{
     color : #263238;
 }
 
+/* <!-- alternative au form --> */
+#contact-me{
+    padding-top: 10px;
+    font-family: "liberation";
+    color: #d4e8e5;
+    text-decoration-style: none;
+}
+
+#contact-me>a:hover{
+    color: #d4e8e5;
+    background-color: #263238;
+}
+
+
 .footer{
     position: sticky;
     left: 0;
