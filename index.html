@@ -19,13 +19,14 @@
 
     <link rel="stylesheet" href="style/style.css">
     <script src="javascript/scrollAnim.js"></script>
+    <script src="javascript/form.js"></script>
     
     
     
     <title>Page perso Maxime Martin</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="container">
+    <div class="container-fluid">
         <div class="sidenav position-fixed text-right">
             <div id="menu">
                 <div id="logo">
@@ -186,7 +187,7 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea name="text" id="textarea" class="form-control"></textarea>
+                        <textarea name="text" id="textarea" class="form-control" maxlength="6000" style="resize: none;"></textarea>
                     </div>
                     <div id="send-button">
                         <button type="submit" class="btn btn-light btn-lg btn-block">Envoyer</button>
@@ -195,31 +196,28 @@
             </div>
         </div>
         
-<!-- <div id="footer">        
-        <div id="links" class="flex-center">
-            <a href="https://www.linkedin.com/in/maxime-martin-16049b14a/" target="_blank">
-                <img class="img-fluid" src="assets/img/in.png" alt="linkedin">
-            </a>
-            <a href="https://www.facebook.com/maxNcoder/?ref=bookmarks" target="_blank">
-                <img class="img-fluid" src="assets/img/facebook.png" alt="facebook">
-            </a>
-            <a href="https://twitter.com/maxIndieDev" target="_blank">
-                <img class="img-fluid" src="assets/img/twitter.png" alt="twitter">
-            </a>
-            <a href="https://www.instagram.com/maxcodeur/?hl=fr" target="_blank">
-                <img class="img-fluid" src="assets/img/instagram.png" alt="instagram">
-            </a>
-        </div>
-        
-        <div class="footer-copyright py-3 text-center">
-            Maxime Martin © 2018 Copyright
-        </div>
-        </div> -->
-    </div>
-</body>
-
-<footer class="footer-muted">
-
-</footer>
+    </body>
+    
+    <footer class="footer">        
+            <div id="links" class="flex-center">
+                <a href="https://www.linkedin.com/in/maxime-martin-16049b14a/" target="_blank">
+                    <img class="img-fluid" src="assets/img/in.png" alt="linkedin">
+                </a>
+                <a href="https://www.facebook.com/maxNcoder/?ref=bookmarks" target="_blank">
+                    <img class="img-fluid" src="assets/img/facebook.png" alt="facebook">
+                </a>
+                <a href="https://twitter.com/maxIndieDev" target="_blank">
+                    <img class="img-fluid" src="assets/img/twitter.png" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/maxcodeur/?hl=fr" target="_blank">
+                    <img class="img-fluid" src="assets/img/instagram.png" alt="instagram">
+                </a>
+            </div>
+            
+            <div class="footer-copyright py-3 text-center">
+                Maxime Martin © 2018 Copyright
+            </div>
+            </div>
+        </footer>
 
 </html>

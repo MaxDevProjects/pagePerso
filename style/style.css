@@ -13,17 +13,14 @@
 
 *{
     margin: 0;
-    
 }
 
- html{
-    margin: 0 0 0 0;
-    left: 0;
-    top: 0%;
-    bottom: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
+ html, body{
+     margin: 0;
+     margin-left: 0;
+     width: 100vw;
+     height: 100vh;
+    justify-content: center;
 } 
 
 .sidenav {
@@ -73,6 +70,12 @@
     margin-left: 300px;
 }
 
+@keyframes name-anim{
+    0%{margin-left: 200vw; visibility: hidden;}
+    100%{margin-left: 2vw;}
+}
+
+
 #titre>div>h1{
     position: relative;
     font-family: 'goudy';
@@ -80,8 +83,14 @@
     margin-top: 40vh;
     font-size: 4em;
     margin-left: 2vw;
+    animation-name: name-anim;
+    animation-duration: 3s;
 }
 
+@keyframes titre-anim{
+    0%{margin-left: 400vw; visibility: hidden;flex: none;}
+    100%{margin-left: 4vw;flex: none;}
+}
 #titre>div>h3{
     position: relative;
     font-family: 'wunderland';
@@ -89,15 +98,26 @@
     margin-top: 20vh;
     font-size: 3em;
     margin-left: 4vw;
+    animation-name: titre-anim;
+    animation-duration: 3s;
 }
 
+
+@keyframes bg-header-anim{
+    0%{right:-50%;opacity: 0; }          
+    100%{right: 0; opacity: 0.2;}
+} 
 #header-bg{
-    position: static;
+    position: relative;
     opacity: 0.2;
     height: 810px;
     transform-origin: right;
-    right: -2.5vw;
+    right: 0;
+    animation-name: bg-header-anim;
+    animation-duration: 1.5s;
 }
+
+
 
 #apropos{
     display: flex;
@@ -246,6 +266,7 @@
 .form{
     display: flex;
     flex-direction: column;
+    position: sticky;
      margin-top: 2.5vh;
      margin-left: 38vw;
      margin-bottom: 10vh;
@@ -281,16 +302,16 @@ input{
     color : #263238;
 }
 
-#footer{
+.footer{
+    position: sticky;
     left: 0;
-    bottom: 0;
+    bottom: -1;
     width: 100vw;
     height: 10vh;
     font-family: 'liberation';
     font-size: 0.8vw;
     color: #d4e8e5;
     background-color: #263238;
-    padding: 25px;
 }
 
 #links{
