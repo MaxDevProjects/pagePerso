@@ -98,6 +98,8 @@
     margin-top: 40vh;
     font-size: 4em;
     margin-left: 2vw;
+    -webkit-animation-name: name-anim;
+    -webkit-animation-duration: 3s;
     animation-name: name-anim;
     animation-duration: 3s;
 }
@@ -113,6 +115,8 @@
     margin-top: 20vh;
     font-size: 3em;
     margin-left: 4vw;
+    -webkit-animation-name: titre-anim;
+    -webkit-animation-duration: 3s;
     animation-name: titre-anim;
     animation-duration: 3s;
 }
@@ -128,6 +132,8 @@
     height: 810px;
     transform-origin: right;
     right: 0;
+    -webkit-animation-name: bg-header-anim;
+    -webkit-animation-duration: 1.5s;
     animation-name: bg-header-anim;
     animation-duration: 1.5s;
 }
