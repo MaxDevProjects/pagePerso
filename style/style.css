@@ -60,6 +60,7 @@ ul{
 }
 
 
+
 #download-btn{
     position: absolute;
     width: 100%;
@@ -149,6 +150,24 @@ ul{
 
 
 
+@keyframes apropos-titre{
+
+}
+
+@keyframes apropos-text{
+
+}
+
+@keyframes apropos-bg{
+    0% {left: -50vw;}
+    100%{left: 14vw;}
+    
+}
+
+.nav-link.active:enabled{
+    animation-play-state: running;
+}
+
 #apropos{
     display: flex;
     background-color: #00695c;
@@ -186,6 +205,10 @@ ul{
     opacity: 0.2;
     height: 100vh;
     left: 14vw;
+    -webkit-animation-name: apropos-bg;
+    -webkit-animation-duration: 2s;
+    animation-name: apropos-bg;
+    animation-duration: 2s;
 }
 
 #technos{
