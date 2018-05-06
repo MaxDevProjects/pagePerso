@@ -43,6 +43,18 @@ ul{
     padding-top: 20px;
     margin: 0;
 }
+@keyframes logo-anim{
+    0%{width: 0}
+    100%{width: 75%}
+}
+#logo{
+    width: 75%;
+    margin: auto;
+    -webkit-animation-name: logo-anim;
+    -webkit-animation-duration: 1.5s;
+    animation-name: logo-anim;
+    animation-duration: 1.5s;
+}
 
 .sidebar a {
     display: block;
